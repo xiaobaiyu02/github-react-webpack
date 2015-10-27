@@ -1,0 +1,25 @@
+{
+  "main": "index.html",
+  "name": "custom",
+  "version": "1.0.0",
+  "description": "react and webpack",
+  "scripts": {
+    "start": "node ./js/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xiaobaiyu02/React.git"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.12.2",
+    "css-loader": "^0.15.0",
+    "style-loader": "^0.12.4",
+    "react-hot-loader": "^1.1.1",
+    "webpack": "^1.5.1",
+    "webpack-dev-server": "1.6.4",
+    "babel": ""
+  },
+  "dependencies": {
+    "react": "^0.12.0"
+  }
+}

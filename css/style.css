@@ -1,46 +1,69 @@
-html {
-  font-size: 62.5%;
-  font-family: MicroSoft YaHei
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
-
-body {
-  font-size: 1.4rem;
+.banner-scroll{
+	width: 280px;
+	margin: 20px auto;
+	position: relative;
 }
-
-.tab-selector {
-
+.banner-scroll .img-container{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
 }
-
-.tab-selector label {
-
+.banner-scroll .img-container ul{
+	display: flex;
+	width: 300%;
+	transition: all .3s linear;
 }
-
-.tab-selector ul {
-  margin: 20px auto;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  width: 30%;
+.banner-scroll .img-container li{
+	flex: 1;
 }
-
-.tab-selector li {
-  flex: 1;
-  margin: 0 4px;
-  padding: 4px 0;
-  border-radius: 6px;
-  border: 1px solid #ddd;
-  text-align: center;
+.banner-scroll .img-container li img{
+	display: block;
+	width: 100%;
+	max-width: 100%;
 }
-.tab-selector li:hover{
-  cursor: pointer;
+.banner-scroll .quick-look{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+	text-align: center;
+	cursor: pointer;
 }
-
-.tab-selector li.selected{
-  background-color: #eee;
+.banner-scroll .quick-look li.selected{
+	border: 1px solid #999;
+	background-color: rgba(255,255,255,.4);
 }
-
-.tab-selector .color-show{
-  width: 60%;
-  height: 100px;
-  margin: auto;
+.banner-scroll .quick-look li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	border-radius: 100%;
+	background-color: rgba(0,0,0,.4);
+	margin: 0 5px;
+	border: 1px solid transparent;
+}
+.hander span{
+	vertical-align: middle;
+	position: absolute;
+	display: block;
+	width: 10%;
+	top: 0;
+	bottom: 0;
+	z-index: 999;
+	cursor: pointer;
+}
+.hander .left{
+	left: 0;
+	background:-webkit-linear-gradient(left, rgba(0,0,0,.05), rgba(0,0,0,.2));
+}
+.hander .right{
+	right: 0;
+	background:-webkit-linear-gradient(left, rgba(0,0,0,.2), rgba(0,0,0,.05));
 }

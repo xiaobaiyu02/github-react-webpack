@@ -11,7 +11,6 @@ class WeatherData {
     this.fetchForecast();
   }
   jsonURL(apiUrl) {
-    console.log(2222,this.cityName)
     return `${this.apiBase}${apiUrl}${this.cityName}&APPID=${this.apiKey}`;
   }
   // callback(weatherData)
@@ -33,7 +32,7 @@ class WeatherData {
   fetchForecast(callback) {
     var apiUrl = "/forecast/daily?units=metric&q=";
     fetch(this.jsonURL(apiUrl))
-      .then( (response) => {      
+      .then( (response) => {
         return response.json();
       })
       .then( (data) => {
@@ -170,25 +169,26 @@ ReactDOM.render(
 );
 
 
-fetch("http://10.1.41.16:8081/login",{
-  method: "POST",
-  body: JSON.stringify({
-    username: "baiyu",
-    password: "111111"
-  })
-}).then( (res) => {
-  return res.json();
-}, (err) => {
-  console.log(err);
-})
-.then( (data) => {
-  console.log(111,data)
-})
-fetch("http://10.1.41.16:8081/thor/pools")
-  .then( (response) => {
-    console.log(222,response);
-    return response.json();
-  })
-  .then( (data) => {
-    console.log(222,data)
-  })
+// fetch("http://10.1.41.16:8081/login",{
+//   method: "POST",
+//   body: JSON.stringify({
+//     username: "baiyu",
+//     password: "111111"
+//   })
+// }).then( (res) => {
+//   return res.json();
+// }, (err) => {
+//   console.log(err);
+// })
+// .then( (data) => {
+//   console.log(111,data)
+// })
+// fetch("http://10.1.41.16:8081/thor/pools")
+//   .then( (response) => {
+//     console.log(222,response);
+//     return response.json();
+//   })
+//   .then( (data) => {
+//     console.log(222,data)
+//   })
+

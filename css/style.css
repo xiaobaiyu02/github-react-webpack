@@ -76,3 +76,29 @@ ul{
 	font-family: 'Roboto Slab', serif;
 	font-weight: 300;
 }
+
+/* menu style */
+a.active{
+	color:red;
+}
+.sublist{
+	display: none;
+	padding-left: 10px;
+}
+.menu>.open .sublist{
+	display: block;
+}
+
+/* form style */
+section{
+	margin-bottom: 20px
+}
+form[name="reactFrom"]{
+	width: 30%;
+	position: relative;
+}
+form[name="reactFrom"] pre{
+	position: absolute;
+	left: 120%;
+	top: 0;
+}

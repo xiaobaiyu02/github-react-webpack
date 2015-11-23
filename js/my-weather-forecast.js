@@ -12,13 +12,13 @@ class WeatherData{
 		this.fetchCurrent();
 		this.fetchForecast();
 	}
-	jsonURL(apiUrl){
-		return `${this.apiKey}${apiUrl}${this.cityName}&APPID=${this.apiKey}`;
-	}
-	fetchCurrent(callback){
-		var apiUrl = "/weather?units=metric&q=";
-		fetch(this.jsonURL(apiUrl)).then( (response)=>response.json(); )
-	}
+	// jsonURL(apiUrl){
+	// 	return `${this.apiKey}${apiUrl}${this.cityName}&APPID=${this.apiKey}`;
+	// }
+	// fetchCurrent(callback){
+	// 	var apiUrl = "/weather?units=metric&q=";
+	// 	fetch(this.jsonURL(apiUrl)).then( (response)=>response.json(); )
+	// }
 }
 
 class CityInput extends Component{
@@ -130,3 +130,22 @@ render(
 console.log(CityInput)
 console.log(CityInput.__proto__ === Component)
 console.log(Component.prototype)
+
+class Var extends Component{
+	constructor(...x){
+		super(...x);
+	}
+	render(){
+		return(
+			<div>
+			  <p>Paragraph 1</p>
+			  <p>Paragraph 2</p>
+			</div>
+		)
+	}
+}
+console.log(44444,Var)
+render(
+	<Var></Var>,
+	document.getElementById("test")
+)

@@ -17,9 +17,207 @@ let MenuList = [
 			{
 				"key": "Host",
 				"value": "主机管理",
+				"belong": "Resource",
+				"url": "/resource/host",
+				"sublist": [
+					{
+						"key": "Host",
+						"value": "主机管理",
+						"sublist": [
+							{
+								"key": "Host",
+								"value": "主机管理",
+								"sublist": [
+									{
+										"key": "Host",
+										"value": "主机管理",
+										"sublist": [
+											{
+												"key": "Host",
+												"value": "主机管理",
+												"sublist": [
+													{
+														"key": "Host",
+														"value": "主机管理",
+		"sublist": [
+			{
+				"key": "Host",
+				"value": "主机管理",
+		"sublist": [
+			{
+				"key": "Host",
+				"value": "主机管理",
 				"is_group": false,
 				"belong": "Resource",
 				"url": "/resource/host"
+			},
+			{
+				"key": "Network",
+				"value": "网络管理",
+		"sublist": [
+			{
+				"key": "Host",
+				"value": "主机管理",
+				"is_group": false,
+				"belong": "Resource",
+				"url": "/resource/host"
+			},
+			{
+				"key": "Network",
+				"value": "网络管理",
+		"sublist": [
+			{
+				"key": "Host",
+				"value": "主机管理",
+				"is_group": false,
+				"belong": "Resource",
+				"url": "/resource/host"
+			},
+			{
+				"key": "Network",
+				"value": "网络管理",
+				"is_group": false,
+				"belong": "Resource",
+				"url": "/resource/network"
+			},
+			{
+				"key": "Storage",
+				"value": "存储管理",
+				"is_group": false,
+				"belong": "Resource",
+				"url": "/resource/storage"
+			}
+		],
+				"belong": "Resource",
+				"url": "/resource/network"
+			},
+			{
+				"key": "Storage",
+				"value": "存储管理",
+				"is_group": false,
+				"belong": "Resource",
+				"url": "/resource/storage"
+			}
+		],
+				"belong": "Resource",
+				"url": "/resource/network"
+			},
+			{
+				"key": "Storage",
+				"value": "存储管理",
+				"is_group": false,
+				"belong": "Resource",
+				"url": "/resource/storage"
+			}
+		],
+				"belong": "Resource",
+				"url": "/resource/host"
+			},
+			{
+				"key": "Network",
+				"value": "网络管理",
+				"is_group": false,
+				"belong": "Resource",
+				"url": "/resource/network"
+			},
+			{
+				"key": "Storage",
+				"value": "存储管理",
+				"is_group": false,
+				"belong": "Resource",
+				"url": "/resource/storage"
+			}
+		],
+														"belong": "Resource",
+														"url": "/resource/host"
+													},
+													{
+														"key": "Network",
+														"value": "网络管理",
+														"is_group": false,
+														"belong": "Resource",
+														"url": "/resource/network"
+													},
+													{
+														"key": "Storage",
+														"value": "存储管理",
+														"is_group": false,
+														"belong": "Resource",
+														"url": "/resource/storage"
+													}
+												],
+												"belong": "Resource",
+												"url": "/resource/host"
+											},
+											{
+												"key": "Network",
+												"value": "网络管理",
+												"is_group": false,
+												"belong": "Resource",
+												"url": "/resource/network"
+											},
+											{
+												"key": "Storage",
+												"value": "存储管理",
+												"is_group": false,
+												"belong": "Resource",
+												"url": "/resource/storage"
+											}
+										],
+										"belong": "Resource",
+										"url": "/resource/host"
+									},
+									{
+										"key": "Network",
+										"value": "网络管理",
+										"is_group": false,
+										"belong": "Resource",
+										"url": "/resource/network"
+									},
+									{
+										"key": "Storage",
+										"value": "存储管理",
+										"is_group": false,
+										"belong": "Resource",
+										"url": "/resource/storage"
+									}
+								],
+								"belong": "Resource",
+								"url": "/resource/host"
+							},
+							{
+								"key": "Network",
+								"value": "网络管理",
+								"is_group": false,
+								"belong": "Resource",
+								"url": "/resource/network"
+							},
+							{
+								"key": "Storage",
+								"value": "存储管理",
+								"is_group": false,
+								"belong": "Resource",
+								"url": "/resource/storage"
+							}
+						],
+						"belong": "Resource",
+						"url": "/resource/host"
+					},
+					{
+						"key": "Network",
+						"value": "网络管理",
+						"is_group": false,
+						"belong": "Resource",
+						"url": "/resource/network"
+					},
+					{
+						"key": "Storage",
+						"value": "存储管理",
+						"is_group": false,
+						"belong": "Resource",
+						"url": "/resource/storage"
+					}
+				]
 			},
 			{
 				"key": "Network",
@@ -242,6 +440,7 @@ let MenuList = [
 	}
 ];
 
+console.log(MenuList)
 class MenuData{
 	constructor( ){
 		this.api = "http://10.1.41.17:8081/login";
